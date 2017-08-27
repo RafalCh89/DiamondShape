@@ -1,61 +1,74 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace diamondShape
+class triangle_one
 {
-    class Program
+    public static void Main()
     {
-        static void Main(string[] args)
-        {
-            int a, b, num;
-            while (true)
-            {
-                Console.Write("Enter a number between 1 to 9 : ");
-                num = Convert.ToInt32(Console.ReadLine());
-                if ((num <= 9) && (num > 0))
-                {
-                    break;
-                }
-                Console.WriteLine("Wrong Input!! Please enter a number between 1 to 9");
-            }
-            for (a = 1; a <= num; a++)
-            {
-                for (b = num; b >= a; b --)
-                {
-                    Console.Write(' ');
-                }
-                for (b = 1; b <= a; b++)
-                {
-                    Console.Write('*');
-                }
-                for (b = 1; b <= a; b++)
-                {
-                    Console.Write('*');
-                }
-                Console.WriteLine();
-            }
+        /* 
+          
+        int num;
+         int p;
 
-            for (a = 1; a <= num; a++)
+         while (true)
+         {
+             Console.Write("Pease enter a number between 1 to 9 : ");
+             num = Convert.ToInt32(Console.ReadLine());
+             if ((num <= 9) && (num > 0))
+             {
+                 break;
+             }
+             Console.WriteLine("You have entered inccorect value. Please enter a number between 1 to 9");
+         }
+
+         for (int row = 1; row <= num; row++)
+         {
+             p = row;
+             for (int col = 1; col <= row; col++)
+             {
+                 Console.Write("" + "*");  
+                 p--;
+             }
+             Console.Write("\n");
+         }
+         Console.ReadLine();
+
+     }*/
+
+        
+       int num;
+         int p;
+
+         while (true)
+         {
+             Console.Write("Pease enter a number between 1 to 9 : ");
+             num = Convert.ToInt32(Console.ReadLine());
+             if ((num <= 9) && (num > 0))
+             {
+                 break;
+             }
+             Console.WriteLine("You have entered inccorect value. Please enter a number between 1 to 9");
+         }
+
+  
+      {
+           
+            int i, j, k;
+            for (i = 1; i <= num; i++)
             {
-                for (b = 0; b < a; b++)
+                for (j = 1; j <= num - i; j++)
                 {
-                    Console.Write(' ');
+                    // Console.Write(" ");
                 }
-                for (b = num; b >= a; b --)
+                for (k = 1; k <= j; k++)
                 {
-                    Console.Write('*');
+                    Console.Write("*");
                 }
-                for (b = num; b >= a; b --)
-                {
-                    Console.Write('*');
-                }
-                Console.WriteLine();
+                Console.WriteLine("");
             }
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
+    
+
     }
 
